@@ -7,7 +7,7 @@ namespace GerenciadorPedidos.Domain.Argumentos.Produtos
     {
         public string descricao { get; set; }
         public Guid categoriaProdutoId { get; set; }
-        public double valorVenda { get;  set; }
+        public decimal valorVenda { get;  set; }
         public int quantidade { get; set; }
     }
 }

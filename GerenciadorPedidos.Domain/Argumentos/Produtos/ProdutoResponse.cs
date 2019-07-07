@@ -10,7 +10,7 @@ namespace GerenciadorPedidos.Domain.Argumentos.Produtos
         public string Descricao { get; set; }
         public CategoriaProduto CategoriaProduto { get; set; }
         public Guid CategoriaProdutoId { get; set; }
-        public double ValorVenda { get; set; }
+        public decimal ValorVenda { get; set; }
         public int Quantidade { get; set; }
 
         public static explicit operator ProdutoResponse(Produto model)

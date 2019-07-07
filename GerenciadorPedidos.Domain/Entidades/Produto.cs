@@ -22,7 +22,7 @@ namespace GerenciadorPedidos.Domain.Entidades
         public string Descricao { get;private set; }
         public CategoriaProduto CategoriaProduto { get; private set; }
         public Guid CategoriaProdutoId { get; private set; }
-        public double ValorVenda { get;private set; }
+        public decimal ValorVenda { get;private set; }
         public int Quantidade { get;private set; }
 
         public void Alterar(ProdutoAlterarRequest request)

@@ -1,17 +1,31 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "1e0f2d9ee93d995428da7c45a5c58686add05c10"
+    "signature": "2fc0894448f410f1d068edd8f950e51ff20848fe"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.2": {
       "GerenciadorPedidos.Infra/1.0.0": {
         "dependencies": {
+          "EntityFramework": "6.2.0",
+          "GerenciadorPedidos.Domain": "1.0.0",
           "prmToolkit.NotificationPattern": "1.1.2"
         },
         "runtime": {
           "GerenciadorPedidos.Infra.dll": {}
+        }
+      },
+      "EntityFramework/6.2.0": {
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.2.61023.0"
+          },
+          "lib/net45/EntityFramework.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.2.61023.0"
+          }
         }
       },
       "prmToolkit.NotificationPattern/1.1.2": {
@@ -26,6 +40,19 @@
             "locale": "en-US"
           }
         }
+      },
+      "GerenciadorPedidos.Domain/1.0.0": {
+        "dependencies": {
+          "prmToolkit.NotificationPattern": "1.1.2"
+        },
+        "runtime": {
+          "GerenciadorPedidos.Domain.dll": {}
+        },
+        "resources": {
+          "en/GerenciadorPedidos.Domain.resources.dll": {
+            "locale": "en"
+          }
+        }
       }
     }
   },
@@ -35,12 +62,24 @@
       "serviceable": false,
       "sha512": ""
     },
+    "EntityFramework/6.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ptGyXOf26qLrtn+2doAmylIlCxOnBJANwlyyLrXDmqIk9O18IzLWHyxDwwAyhgXkxmbiaA0WNpRy67WRReInBw==",
+      "path": "entityframework/6.2.0",
+      "hashPath": "entityframework.6.2.0.nupkg.sha512"
+    },
     "prmToolkit.NotificationPattern/1.1.2": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-21iUzm7KXAs/LbA4nl48npF02mxf0dN1bNXemmXj0K7qcuUO9bO7ldz3JmLQAX4Ahw2f+vKKkdA6xk/aY6g30g==",
       "path": "prmtoolkit.notificationpattern/1.1.2",
       "hashPath": "prmtoolkit.notificationpattern.1.1.2.nupkg.sha512"
+    },
+    "GerenciadorPedidos.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
