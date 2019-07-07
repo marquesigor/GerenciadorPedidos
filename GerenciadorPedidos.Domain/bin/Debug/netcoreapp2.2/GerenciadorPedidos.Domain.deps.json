@@ -12,6 +12,11 @@
         },
         "runtime": {
           "GerenciadorPedidos.Domain.dll": {}
+        },
+        "resources": {
+          "en/GerenciadorPedidos.Domain.resources.dll": {
+            "locale": "en"
+          }
         }
       },
       "prmToolkit.NotificationPattern/1.1.2": {

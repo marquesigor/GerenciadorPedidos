@@ -123,6 +123,12 @@
   <data name="DADOS_NAO_ENCONTRADOS" xml:space="preserve">
     <value>Dados não encontrados.</value>
   </data>
+  <data name="EH_NECESSARIO_INFORMAR_UMA_X0" xml:space="preserve">
+    <value>É necessário informar uma {0}.</value>
+  </data>
+  <data name="EH_NECESSARIO_INFORMAR_UM_X0" xml:space="preserve">
+    <value>É necessário informar um {0}.</value>
+  </data>
   <data name="JA_EXISTE_UMA_X0_CHAMADA_X1" xml:space="preserve">
     <value>Já existe uma {0} chamada {1}.</value>
   </data>

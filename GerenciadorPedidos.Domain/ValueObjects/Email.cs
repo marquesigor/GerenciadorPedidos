@@ -10,8 +10,8 @@ namespace GerenciadorPedidos.Domain.ValueObjects
         {
             EnderecoEletronico = enderecoEletronico;
 
-            new AddNotifications<Email>(this).IfNotEmail(item => item.EnderecoEletronico,Message_PT_BR.X0_INVALIDA.ToFormat("E-mail"));
-            new AddNotifications<Email>(this).IfNullOrInvalidLength(item => item.EnderecoEletronico, 1, 200, Message_PT_BR.X0_OBRIGATORIA_E_DEVE_CONTER_ENTRE_X1_E_X2_CARACTERES.ToFormat("EnderecoEletronico", "1", "200"));
+            new AddNotifications<Email>(this).IfNotEmail(item => item.EnderecoEletronico,Message.X0_INVALIDA.ToFormat("E-mail"));
+            new AddNotifications<Email>(this).IfNullOrInvalidLength(item => item.EnderecoEletronico, 1, 200, Message.X0_OBRIGATORIA_E_DEVE_CONTER_ENTRE_X1_E_X2_CARACTERES.ToFormat("EnderecoEletronico", "1", "200"));
         }
 
         public string EnderecoEletronico { get; private set; }

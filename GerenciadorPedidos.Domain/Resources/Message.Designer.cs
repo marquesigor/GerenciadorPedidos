@@ -22,14 +22,14 @@ namespace GerenciadorPedidos.Domain.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class Message_PT_BR {
+    public class Message {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Message_PT_BR() {
+        internal Message() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace GerenciadorPedidos.Domain.Resources {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("GerenciadorPedidos.Domain.Resources.Message_PT-BR", typeof(Message_PT_BR).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("GerenciadorPedidos.Domain.Resources.Message", typeof(Message).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -75,6 +75,24 @@ namespace GerenciadorPedidos.Domain.Resources {
         public static string DADOS_NAO_ENCONTRADOS {
             get {
                 return ResourceManager.GetString("DADOS_NAO_ENCONTRADOS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to É necessário informar um {0}..
+        /// </summary>
+        public static string EH_NECESSARIO_INFORMAR_UM_X0 {
+            get {
+                return ResourceManager.GetString("EH_NECESSARIO_INFORMAR_UM_X0", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to É necessário informar uma {0}..
+        /// </summary>
+        public static string EH_NECESSARIO_INFORMAR_UMA_X0 {
+            get {
+                return ResourceManager.GetString("EH_NECESSARIO_INFORMAR_UMA_X0", resourceCulture);
             }
         }
         
