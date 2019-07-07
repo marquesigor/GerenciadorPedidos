@@ -1,0 +1,14 @@
+C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.Api\bin\Debug\netcoreapp2.2\GerenciadorPedidos.Api.deps.json
+C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.Api\bin\Debug\netcoreapp2.2\GerenciadorPedidos.Api.runtimeconfig.json
+C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.Api\bin\Debug\netcoreapp2.2\GerenciadorPedidos.Api.runtimeconfig.dev.json
+C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.Api\bin\Debug\netcoreapp2.2\GerenciadorPedidos.Api.dll
+C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.Api\bin\Debug\netcoreapp2.2\GerenciadorPedidos.Api.pdb
+C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.Api\obj\Debug\netcoreapp2.2\GerenciadorPedidos.Api.csprojAssemblyReference.cache
+C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.Api\obj\Debug\netcoreapp2.2\GerenciadorPedidos.Api.csproj.CoreCompileInputs.cache
+C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.Api\obj\Debug\netcoreapp2.2\GerenciadorPedidos.Api.RazorAssemblyInfo.cache
+C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.Api\obj\Debug\netcoreapp2.2\GerenciadorPedidos.Api.RazorAssemblyInfo.cs
+C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.Api\obj\Debug\netcoreapp2.2\GerenciadorPedidos.Api.AssemblyInfoInputs.cache
+C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.Api\obj\Debug\netcoreapp2.2\GerenciadorPedidos.Api.AssemblyInfo.cs
+C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.Api\obj\Debug\netcoreapp2.2\GerenciadorPedidos.Api.RazorTargetAssemblyInfo.cache
+C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.Api\obj\Debug\netcoreapp2.2\GerenciadorPedidos.Api.dll
+C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.Api\obj\Debug\netcoreapp2.2\GerenciadorPedidos.Api.pdb
