@@ -1,0 +1,9 @@
+C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.Infra\bin\Debug\netcoreapp2.2\GerenciadorPedidos.Infra.deps.json
+C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.Infra\bin\Debug\netcoreapp2.2\GerenciadorPedidos.Infra.dll
+C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.Infra\obj\Debug\netcoreapp2.2\GerenciadorPedidos.Infra.csproj.CoreCompileInputs.cache
+C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.Infra\obj\Debug\netcoreapp2.2\GerenciadorPedidos.Infra.AssemblyInfoInputs.cache
+C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.Infra\obj\Debug\netcoreapp2.2\GerenciadorPedidos.Infra.AssemblyInfo.cs
+C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.Infra\bin\Debug\netcoreapp2.2\GerenciadorPedidos.Infra.pdb
+C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.Infra\obj\Debug\netcoreapp2.2\GerenciadorPedidos.Infra.csprojAssemblyReference.cache
+C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.Infra\obj\Debug\netcoreapp2.2\GerenciadorPedidos.Infra.dll
+C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.Infra\obj\Debug\netcoreapp2.2\GerenciadorPedidos.Infra.pdb

@@ -4,4 +4,32 @@
     <TargetFramework>netcoreapp2.2</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="prmToolkit.NotificationPattern" Version="1.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resources\Message_PT-BR.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Message_PT-BR.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\Message_PT-BR.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Message_PT-BR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Argumentos\Clientes\" />
+    <Folder Include="Argumentos\Base\" />
+    <Folder Include="Argumentos\CategoriasProduto\" />
+    <Folder Include="Argumentos\PedidoProdutos\" />
+    <Folder Include="Argumentos\Pedidos\" />
+    <Folder Include="Argumentos\Produtos\" />
+  </ItemGroup>
+
 </Project>
