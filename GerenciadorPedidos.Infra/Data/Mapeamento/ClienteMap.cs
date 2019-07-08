@@ -1,21 +1,25 @@
 ﻿using GerenciadorPedidos.Domain.Entidades;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Data.Entity.Infrastructure.Annotations;
-using System.Data.Entity.ModelConfiguration;
+using GerenciadorPedidos.Domain.ValueObjects;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace GerenciadorPedidos.Infra.Data.Mapeamento
 {
-    public class ClienteMap : EntityTypeConfiguration<Cliente>
+    public class ClienteMap : IEntityTypeConfiguration<Cliente>
     {
-        public ClienteMap()
+        public void Configure(EntityTypeBuilder<Cliente> builder)
         {
-            ToTable("Cliente");
-            Property(item => item.Email.EnderecoEletronico).HasMaxLength(200).IsRequired().HasColumnAnnotation("Index", new IndexAnnotation(new IndexAttribute("UK_Cliente_EMAIL") { IsUnique = true })).HasColumnName("Email");
-            Property(item => item.Nome.PrimeiroNome).HasMaxLength(50).IsRequired();
-            Property(item => item.Nome.UltimoNome).HasMaxLength(100).IsRequired();
-            Property(item => item.Telefone).HasMaxLength(20).IsRequired();
-            Property(item => item.Endereco).HasMaxLength(200).IsRequired();
-            Property(item => item.DataCriacao).IsRequired();
+            builder.OwnsOne<Nome>(x => x.Nome, cb => {
+                cb.Property(x => x.PrimeiroNome).HasMaxLength(50).HasColumnName("PrimeiroNome").IsRequired();
+                cb.Property(x => x.UltimoNome).HasMaxLength(50).HasColumnName("UltimoNome").IsRequired();
+            });
+
+            builder.OwnsOne<Email>(x => x.Email, cb => {
+                cb.Property(x => x.EnderecoEletronico).HasMaxLength(200).HasColumnName("Email").IsRequired();
+            });
+            builder.Property(item => item.Telefone).HasMaxLength(20).IsRequired();
+            builder.Property(item => item.Endereco).HasMaxLength(200).IsRequired();
+            builder.Property(item => item.DataCriacao).IsRequired();
         }
     }
 }

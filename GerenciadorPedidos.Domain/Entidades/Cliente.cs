@@ -9,6 +9,7 @@ namespace GerenciadorPedidos.Domain.Entidades
 {
     public class Cliente : EntidadeBase
     {
+        public Cliente() { }
         public Cliente(ClienteIncluirRequest request)
         {
             Nome = new Nome(request.primeiroNome, request.ultimoNome);
@@ -20,10 +21,10 @@ namespace GerenciadorPedidos.Domain.Entidades
             new AddNotifications<Cliente>(this).IfNullOrInvalidLength(item => item.Endereco, 1, 200, Message.X0_OBRIGATORIO_E_DEVE_CONTER_ENTRE_X1_E_X2_CARACTERES.ToFormat("Endereço"));
         }
 
-        public Nome Nome { get;private set; }
-        public Email Email { get;private set; }
+        public Nome Nome { get; private set; }
+        public Email Email { get; private set; }
         public string Telefone { get; private set; }
-        public string Endereco { get;private set; }
+        public string Endereco { get; private set; }
 
         public void Alterar(ClienteAlterarRequest request)
         {

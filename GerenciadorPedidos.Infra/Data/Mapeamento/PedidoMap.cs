@@ -1,16 +1,16 @@
 ﻿using GerenciadorPedidos.Domain.Entidades;
-using System.Data.Entity.ModelConfiguration;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace GerenciadorPedidos.Infra.Data.Mapeamento
 {
-    public class PedidoMap : EntityTypeConfiguration<Pedido>
+    public class PedidoMap : IEntityTypeConfiguration<Pedido>
     {
-        public PedidoMap()
+        public void Configure(EntityTypeBuilder<Pedido> builder)
         {
-            ToTable("Pedido");
-            HasRequired(item => item.Cliente).WithMany().HasForeignKey(fk => fk.ClienteId).WillCascadeOnDelete(false);
-            Property(item => item.Data).IsRequired();
-            Property(item => item.DataCriacao).IsRequired();
+            builder.HasOne(x => x.Cliente).WithMany().HasForeignKey(item => item.ClienteId);
+            builder.Property(item => item.Data).IsRequired();
+            builder.Property(item => item.DataCriacao).IsRequired();
         }
     }
 }

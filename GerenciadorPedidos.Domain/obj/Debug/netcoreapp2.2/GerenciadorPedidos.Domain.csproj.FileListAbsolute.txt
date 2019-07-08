@@ -11,3 +11,5 @@ C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.Domain\obj\
 C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.Domain\obj\Debug\netcoreapp2.2\en\GerenciadorPedidos.Domain.resources.dll
 C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.Domain\obj\Debug\netcoreapp2.2\GerenciadorPedidos.Domain.dll
 C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.Domain\obj\Debug\netcoreapp2.2\GerenciadorPedidos.Domain.pdb
+C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.Domain\obj\Debug\netcoreapp2.2\GerenciadorPedidos.Domain.csprojAssemblyReference.cache
+C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.Domain\obj\Debug\netcoreapp2.2\en\GerenciadorPedidos.Domain.resources.cs

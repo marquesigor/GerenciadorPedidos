@@ -1,15 +1,15 @@
 ﻿using GerenciadorPedidos.Domain.Entidades;
-using System.Data.Entity.ModelConfiguration;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace GerenciadorPedidos.Infra.Data.Mapeamento
 {
-    public class CategoriaProdutoMap : EntityTypeConfiguration<CategoriaProduto>
+    public class CategoriaProdutoMap : IEntityTypeConfiguration<CategoriaProduto>
     {
-        public CategoriaProdutoMap()
+        public void Configure(EntityTypeBuilder<CategoriaProduto> builder)
         {
-            ToTable("CategoriaProduto");
-            Property(item => item.DataCriacao).IsRequired();
-            Property(item => item.Descricao).IsRequired();
+            builder.Property(item => item.Descricao).HasMaxLength(200).IsRequired();
+            builder.Property(item => item.DataCriacao).IsRequired();
         }
     }
 }

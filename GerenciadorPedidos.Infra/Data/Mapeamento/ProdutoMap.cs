@@ -1,17 +1,17 @@
 ﻿using GerenciadorPedidos.Domain.Entidades;
-using System.Data.Entity.ModelConfiguration;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace GerenciadorPedidos.Infra.Data.Mapeamento
 {
-    public class ProdutoMap : EntityTypeConfiguration<Produto>
+    public class ProdutoMap : IEntityTypeConfiguration<Produto>
     {
-        public ProdutoMap()
+        public void Configure(EntityTypeBuilder<Produto> builder)
         {
-            ToTable("Produto");
-            HasRequired(item => item.CategoriaProduto).WithMany().HasForeignKey(fk => fk.CategoriaProdutoId).WillCascadeOnDelete(false);
-            Property(item => item.Descricao).HasMaxLength(200).IsRequired();
-            Property(item => item.ValorVenda).IsRequired().HasPrecision(18, 6);
-            Property(item => item.Quantidade).IsRequired();
+            builder.HasOne(x => x.CategoriaProduto).WithMany().HasForeignKey(item => item.CategoriaProdutoId);
+            builder.Property(item => item.Descricao).HasMaxLength(200).IsRequired();
+            builder.Property(item => item.ValorVenda).IsRequired();
+            builder.Property(item => item.Quantidade).IsRequired();
         }
     }
 }

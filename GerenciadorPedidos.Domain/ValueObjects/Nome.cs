@@ -6,6 +6,7 @@ namespace GerenciadorPedidos.Domain.ValueObjects
 {
     public class Nome : Notifiable
     {
+        public Nome() { }
         public Nome(string primerioNome, string ultimoNome)
         {
             PrimeiroNome = primerioNome;

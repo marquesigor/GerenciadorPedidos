@@ -9,6 +9,7 @@ namespace GerenciadorPedidos.Domain.Entidades
 {
     public class PedidoProduto : EntidadeBase
     {
+        public PedidoProduto() { }
         public PedidoProduto(PedidoProdutoIncluirRequest request)
         {
             PedidoId = request.pedidoId;
@@ -20,7 +21,7 @@ namespace GerenciadorPedidos.Domain.Entidades
             new AddNotifications<PedidoProduto>(this).IfTrue(item => item.Quantidade <= 0, Message.EH_NECESSARIO_INFORMAR_UM_X0.ToFormat("Produto"));
         }
 
-        public Guid PedidoId { get;private set; }
+        public Guid PedidoId { get; private set; }
         public Pedido Pedido { get; private set; }
         public Guid ProdutoId { get; private set; }
         public Produto Produto { get; private set; }

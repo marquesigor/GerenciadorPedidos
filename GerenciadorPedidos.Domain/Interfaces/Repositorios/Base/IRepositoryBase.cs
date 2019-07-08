@@ -32,7 +32,5 @@ namespace GerenciadorPedidos.Domain.Interfaces.Repositorios.Base
         void Remover(TEntidade entidade);
 
         IEnumerable<TEntidade> AdicionarLista(IEnumerable<TEntidade> entidades);
-
-        IEnumerable<TClasse> ExecutaProcedure<TClasse>(string procedure);
     }
 }

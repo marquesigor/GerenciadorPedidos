@@ -1,6 +1,8 @@
 ﻿using GerenciadorPedidos.Domain.Entidades;
-using System.Data.Entity;
-using System.Data.Entity.ModelConfiguration.Conventions;
+using GerenciadorPedidos.Domain.ValueObjects;
+using GerenciadorPedidos.Infra.Data.Mapeamento;
+using Microsoft.EntityFrameworkCore;
+using prmToolkit.NotificationPattern;
 
 namespace GerenciadorPedidos.Infra.Data.Context
 {
@@ -12,11 +14,25 @@ namespace GerenciadorPedidos.Infra.Data.Context
         public DbSet<Pedido> Pedidos { get; set; }
         public DbSet<PedidoProduto> PedidoProdutos { get; set; }
 
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        public static string ConnectionString = @"Server=NET02\IGORPC;Database=GerenciadorPedidos;User ID=sa;Password=!!igor123;";
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
-            modelBuilder.Properties<string>().Configure(p => p.HasMaxLength(100));
-            modelBuilder.Configurations.AddFromAssembly(typeof(GerenciadorPedidosContext).Assembly);
+            optionsBuilder.UseSqlServer(ConnectionString);
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Ignore<Notification>();
+            modelBuilder.Ignore<Nome>();
+            modelBuilder.Ignore<Email>();
+
+            modelBuilder.ApplyConfiguration(new ClienteMap());
+            modelBuilder.ApplyConfiguration(new ProdutoMap());
+            modelBuilder.ApplyConfiguration(new CategoriaProdutoMap());
+            modelBuilder.ApplyConfiguration(new PedidoProdutoMap());
+            modelBuilder.ApplyConfiguration(new PedidoMap());
+
             base.OnModelCreating(modelBuilder);
         }
     }

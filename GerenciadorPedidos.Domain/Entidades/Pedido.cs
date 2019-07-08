@@ -9,6 +9,7 @@ namespace GerenciadorPedidos.Domain.Entidades
 {
     public class Pedido : EntidadeBase
     {
+        public Pedido() { }
         public Pedido(PedidoIncluirRequest request)
         {
             ClienteId = request.clienteId;
@@ -17,9 +18,9 @@ namespace GerenciadorPedidos.Domain.Entidades
             new AddNotifications<Pedido>(this).IfNotGuid(item => item.ClienteId.ToString(), Message.X0_INVALIDO.ToFormat("Cliente"));
         }
 
-        public Guid ClienteId { get;private set; }
-        public Cliente Cliente { get;private set; }
-        public DateTime Data { get;private set; }
+        public Guid ClienteId { get; private set; }
+        public Cliente Cliente { get; private set; }
+        public DateTime Data { get; private set; }
 
         public void Alterar(PedidoAlterarRequest request)
         {

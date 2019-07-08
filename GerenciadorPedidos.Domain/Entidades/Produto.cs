@@ -9,6 +9,7 @@ namespace GerenciadorPedidos.Domain.Entidades
 {
     public class Produto : EntidadeBase
     {
+        public Produto() { }
         public Produto(ProdutoIncluirRequest request)
         {
             Descricao = request.descricao;
@@ -19,11 +20,11 @@ namespace GerenciadorPedidos.Domain.Entidades
             ValidarDominio();
         }
 
-        public string Descricao { get;private set; }
+        public string Descricao { get; private set; }
         public CategoriaProduto CategoriaProduto { get; private set; }
         public Guid CategoriaProdutoId { get; private set; }
-        public decimal ValorVenda { get;private set; }
-        public int Quantidade { get;private set; }
+        public decimal ValorVenda { get; private set; }
+        public int Quantidade { get; private set; }
 
         public void Alterar(ProdutoAlterarRequest request)
         {

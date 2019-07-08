@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GerenciadorPedidos.Domain",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciadorPedidos.Infra", "GerenciadorPedidos.Infra\GerenciadorPedidos.Infra.csproj", "{8911D00A-F587-403F-81CD-47EF5E492C3A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciadorPedidos.API", "GerenciadorPedidos.API\GerenciadorPedidos.API.csproj", "{377AE59D-4C19-4DC0-971E-F874F6E63504}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{8911D00A-F587-403F-81CD-47EF5E492C3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8911D00A-F587-403F-81CD-47EF5E492C3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8911D00A-F587-403F-81CD-47EF5E492C3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{377AE59D-4C19-4DC0-971E-F874F6E63504}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{377AE59D-4C19-4DC0-971E-F874F6E63504}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{377AE59D-4C19-4DC0-971E-F874F6E63504}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{377AE59D-4C19-4DC0-971E-F874F6E63504}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

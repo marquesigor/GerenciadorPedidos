@@ -1,11 +1,10 @@
 ﻿using GerenciadorPedidos.Domain.Entidades.Base;
 using GerenciadorPedidos.Domain.Interfaces.Repositorios.Base;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
-using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
 
 namespace GerenciadorPedidos.Infra.Data.Repositorios.Base
 {
@@ -59,7 +58,8 @@ namespace GerenciadorPedidos.Infra.Data.Repositorios.Base
 
         public TEntidade Adicionar(TEntidade entidade)
         {
-            return _context.Set<TEntidade>().Add(entidade);
+            _context.Add(entidade);
+            return entidade;
         }
 
         public TEntidade Editar(TEntidade entidade)
@@ -84,7 +84,8 @@ namespace GerenciadorPedidos.Infra.Data.Repositorios.Base
 
         public IEnumerable<TEntidade> AdicionarLista(IEnumerable<TEntidade> entidades)
         {
-            return _context.Set<TEntidade>().AddRange(entidades);
+            _context.Set<TEntidade>().AddRange(entidades);
+            return entidades;
         }
 
         public bool Existe(Func<TEntidade, bool> where)
@@ -96,11 +97,6 @@ namespace GerenciadorPedidos.Infra.Data.Repositorios.Base
         {
             foreach (var property in includeProperties) query = query.Include(property);
             return query;
-        }
-
-        public IEnumerable<TClasse> ExecutaProcedure<TClasse>(string procedure)
-        {
-            return _context.Database.SqlQuery<TClasse>($"EXECUTE {procedure}").ToList();
         }
     }
 }
