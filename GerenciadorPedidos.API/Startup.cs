@@ -30,7 +30,8 @@ namespace GerenciadorPedidos.API
 
             services.AddTransient<IServicoCategoriaProduto, ServicoCategoriaProduto>();
             services.AddTransient<IRepositorioCategoriaProduto, RepositorioCategoriaProduto>();
-            
+            services.AddTransient<IServicoProduto, ServicoProduto>();
+            services.AddTransient<IRepositorioProduto, RepositorioProduto>();
 
             services.AddSwaggerGen(c =>
             {
@@ -44,10 +45,13 @@ namespace GerenciadorPedidos.API
             {
                 app.UseDeveloperExceptionPage();
             }
-
-            app.UseHttpsRedirection();
             app.UseMvc();
-
+            app.UseCors(x =>
+            {
+                x.AllowAnyHeader();
+                x.AllowAnyMethod();
+                x.AllowAnyOrigin();
+            });
             app.UseSwagger();
             app.UseSwaggerUI(item =>
             {

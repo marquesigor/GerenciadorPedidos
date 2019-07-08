@@ -6,7 +6,6 @@ using System.Collections.Generic;
 
 namespace GerenciadorPedidos.API.Controllers
 {
-    [ApiController]
     [Route("Produtos")]
     public class ProdutoController : ControllerBase
     {
@@ -17,18 +16,18 @@ namespace GerenciadorPedidos.API.Controllers
             _servicoProduto = servicoProduto;
         }
 
-        [HttpGet]
-        public IEnumerable<IResponse> Buscar()
-        {
-            try
-            {
-                var response = _servicoProduto.Listar();
-                return response;
-            }
-            catch (Exception ex)
-            {
-                return null;
-            }
-        }
+        // [HttpGet]
+        // public IEnumerable<IResponse> Buscar()
+        // {
+        //     try
+        //     {
+        //         var response = _servicoProduto.Listar();
+        //         return response;
+        //     }
+        //     catch (Exception ex)
+        //     {
+        //         return null;
+        //     }
+        // }
     }
 }

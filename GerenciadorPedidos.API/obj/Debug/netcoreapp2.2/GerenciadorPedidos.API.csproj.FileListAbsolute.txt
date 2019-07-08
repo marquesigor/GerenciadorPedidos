@@ -1,6 +1,4 @@
 C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.API\obj\Debug\netcoreapp2.2\GerenciadorPedidos.API.csproj.CoreCompileInputs.cache
-C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.API\obj\Debug\netcoreapp2.2\GerenciadorPedidos.API.RazorAssemblyInfo.cache
-C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.API\obj\Debug\netcoreapp2.2\GerenciadorPedidos.API.RazorAssemblyInfo.cs
 C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.API\obj\Debug\netcoreapp2.2\GerenciadorPedidos.API.AssemblyInfoInputs.cache
 C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.API\obj\Debug\netcoreapp2.2\GerenciadorPedidos.API.AssemblyInfo.cs
 C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.API\bin\Debug\netcoreapp2.2\GerenciadorPedidos.API.deps.json
@@ -8,7 +6,6 @@ C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.API\bin\Deb
 C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.API\bin\Debug\netcoreapp2.2\GerenciadorPedidos.API.runtimeconfig.dev.json
 C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.API\bin\Debug\netcoreapp2.2\GerenciadorPedidos.API.dll
 C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.API\bin\Debug\netcoreapp2.2\GerenciadorPedidos.API.pdb
-C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.API\obj\Debug\netcoreapp2.2\GerenciadorPedidos.API.RazorTargetAssemblyInfo.cache
 C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.API\obj\Debug\netcoreapp2.2\GerenciadorPedidos.API.dll
 C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.API\obj\Debug\netcoreapp2.2\GerenciadorPedidos.API.pdb
 C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.API\obj\Debug\netcoreapp2.2\GerenciadorPedidos.API.csprojAssemblyReference.cache
@@ -18,3 +15,6 @@ C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.API\bin\Deb
 C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.API\bin\Debug\netcoreapp2.2\GerenciadorPedidos.Domain.pdb
 C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.API\bin\Debug\netcoreapp2.2\en\GerenciadorPedidos.Domain.resources.dll
 C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.API\obj\Debug\netcoreapp2.2\GerenciadorPedidos.API.csproj.CopyComplete
+C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.API\obj\Debug\netcoreapp2.2\GerenciadorPedidos.API.RazorAssemblyInfo.cache
+C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.API\obj\Debug\netcoreapp2.2\GerenciadorPedidos.API.RazorAssemblyInfo.cs
+C:\Users\NetAdmin\source\repos\GerenciadorPedidos\GerenciadorPedidos.API\obj\Debug\netcoreapp2.2\GerenciadorPedidos.API.RazorTargetAssemblyInfo.cache

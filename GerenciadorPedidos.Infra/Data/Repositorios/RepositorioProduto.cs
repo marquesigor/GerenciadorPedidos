@@ -4,7 +4,7 @@ using GerenciadorPedidos.Infra.Data.Context;
 using GerenciadorPedidos.Infra.Data.Repositorios.Base;
 using System;
 
-namespace GerenciadorProdutos.Infra.Data.Repositorios
+namespace GerenciadorPedidos.Infra.Data.Repositorios
 {
     public class RepositorioProduto : RepositoryBase<Produto, Guid>, IRepositorioProduto
     {

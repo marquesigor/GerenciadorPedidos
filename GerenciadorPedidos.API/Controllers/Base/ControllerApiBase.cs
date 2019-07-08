@@ -17,7 +17,7 @@ namespace GerenciadorPedidos.API.Controllers.Base
                 _unitOfWork = unitOfWork;
             }
 
-            public async Task<IActionResult> ResponseAsync(object result, IServicoBase serviceBase)
+            public IActionResult ResponseAsync(object result, IServicoBase serviceBase)
             {
                 _serviceBase = serviceBase;
 
@@ -40,7 +40,7 @@ namespace GerenciadorPedidos.API.Controllers.Base
                 }
             }
 
-            public async Task<IActionResult> ResponseExceptionAsync(Exception ex)
+            public IActionResult ResponseExceptionAsync(Exception ex)
             {
                 return BadRequest(new { errors = ex.Message, exception = ex.ToString() });
             }

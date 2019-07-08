@@ -1,34 +1,36 @@
-﻿using GerenciadorPedidos.Domain.Interfaces.Argumentos;
+﻿using GerenciadorPedidos.API.Controllers.Base;
 using GerenciadorPedidos.Domain.Interfaces.Servicos;
+using GerenciadorPedidos.Infra.Transacoes;
 using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Collections.Generic;
 
 namespace GerenciadorPedidos.API.Controllers
 {
-    [ApiController]
     [Route("produtos/categorias")]
-    public class CategoriaProdutoController : ControllerBase
+    public class CategoriaProdutoController : ControllerApiBase
     {
         private readonly IServicoCategoriaProduto _servicoCategoriaProduto;
 
-        public CategoriaProdutoController(IServicoCategoriaProduto servicoCategoriaProduto)
+        public CategoriaProdutoController(IUnitOfWork unityOfWork, IServicoCategoriaProduto servicoCategoriaProduto) : base(unityOfWork)
         {
             _servicoCategoriaProduto = servicoCategoriaProduto;
         }
-
+       
         [HttpGet]
-        public IEnumerable<IResponse> Buscar()
+        public IActionResult Listar()
         {
             try
             {
                 var response = _servicoCategoriaProduto.Listar();
-                return response;
+
+                return ResponseAsync(response, _servicoCategoriaProduto);
             }
             catch (Exception ex)
             {
-                return null;
+                return ResponseExceptionAsync(ex);
+                
             }
         }
+
     }
 }
